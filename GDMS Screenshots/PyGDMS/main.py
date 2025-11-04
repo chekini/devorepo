@@ -3,8 +3,8 @@ from docx import Document
 from docx.shared import Inches
 
 # Ruta donde están las 6 carpetas
-carpeta_principal = r'C:\Users\Sistemas-DP\PyProjects\JsGWN Capturas\Capturas SEDU'  # ← CAMBIA ESTA RUTA
-#r'C:\Users\Sistemas-DP\PyProjects\JsGWN Capturas\Capturas'
+carpeta_principal = r'C:\Users\USER1\MAIN FOLDER\SCREENSHOTS\SS'  # ← CAMBIA ESTA RUTA
+#r'C:\Users\USER1\MAIN FOLDER\SCREENSHOTS\SS'
 # Crea el documento Word
 doc = Document()
 
