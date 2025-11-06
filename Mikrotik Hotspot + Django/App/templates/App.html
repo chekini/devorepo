@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="{% static '/styles/tstyles.css'%}">
+</head>
+<body>
+    <div class="login_contenedor">
+       
+        <form id="frm" action="/Mikrotik">
+            <input type="hidden" name="dst" value="{{ con.1 }}"></input>
+            <label>Internet Gratis</label>
+            <input type="text" name="Nombre" id="id_nombre" class="fields" placeholder="Nombre">
+            <!--<label for="id_apellido">Apellido:</label>-->
+            <input type="text" name="Apellido" id="id_apellido" class="fields" placeholder="Apellido">
+            <!--<label for="id_telefono">Telefono:</label>-->
+            <input type="text" name="Telefono" id="id_telefono" class="fields" placeholder="Telefono">
+            <!--<label for="id_colonias">Colonia:</label>-->
+            <select name="colonias" id="id_colonias">
+                <option value="Seleccione una Colonia">Selecciona una colonia</option>
+               <option value="Sarabia">Sarabia</option>
+               <option value="Porgreso">Porgreso</option>
+               <option value="Centro">Centro</option>
+               <option value="Infonavit">Infonavit</option>
+               <option value="San Luisito">San Luisito</option>
+            </select>
+            <input type="submit" name="loginM" id="loginM" value="Aceptar">
+        </form>
+         <p style="color: aliceblue; ">Aviso breve sobre datos personales
+Tus datos sólo se usan para verificar y darte acceso al servicio de Internet gratuito. Los guardamos de forma segura, no los compartimos con terceros y los eliminamos cuando ya no son necesarios.</p>
+    </div>
+</body>
+</html>
